@@ -29,7 +29,7 @@ on:
       BUILD_DIFFERENT_ROM:
         description: "Command to initialize a different 'repo' project:"
         required: false
-        default: "echo 'Build Starting!'"
+        default: "repo init -u https://github.com/LeafOS-Project/android.git -b leaf-3.2"
       REMOVALS:
         description: "Folders to be removed before syncing:"
         required: false
@@ -48,11 +48,11 @@ on:
       PRODUCT_NAME:
         description: "Product to build:"
         required: true
-        default: "_veux"
+        default: "veux"
       BUILD_COMMAND:
         description: 'Command to be used for compiling:'
         required: true
-        default: ''
+        default: 'm leaf'
       BUILD_TYPE:
         description: 'Type of build:'
         required: true
